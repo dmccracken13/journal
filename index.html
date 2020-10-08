@@ -1,16 +1,62 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Nashville Software School</title>
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
 
-    <body>
-        <main id="container">
+<head>
+    <meta charset="utf-8">
+    <title>Journal</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
 
-        </main>
+<body>
+    <main id="mainContainer">
+        <header>Ponderings of an Amateur Coder</header>
+        <div class="maintContainer__left">
+            <form class="entry">
+               <label for="date">Date</label><br>
+               <input type="text" id="date"><br>
+               <label for="concepts">Concepts</label><br>
+               <input type="text" id="concepts"><br>
+               <label for="entry">Entry</label><br>
+               <input type="text" id="entry"><br>
+            </form>
+        </div>
+        
+        <div class="mainContainer__right">
+            <form class="buttons">
+                <input type="radio" id="mood">
+                <label for="mood">Mood</label><br>
+                <input type="radio" id="record">
+                <label for="record">Record Entry</label><br>
+                <input type="radio" id="delete">
+                <label for="delete">Delete Entry</label>
+              </form>
+            <div class="mood">
 
-        <script type="module" src="./scripts/main.js"></script>
-    </body>
+            </div>
+            <div class="record">
+
+            </div>
+            <div class="delete">
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <footer>
+        <div class="name">
+
+        </div>
+        <div class="github">
+
+        </div>
+        <div class="copyright">
+
+        </div>
+    </footer>
+</body>
+
 </html>
+<!doctype html>
