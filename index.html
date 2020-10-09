@@ -8,42 +8,31 @@
 </head>
 
 <body>
-    <main id="mainContainer">
-        <header>Ponderings of an Amateur Coder</header>
-        <div class="maintContainer__left">
-            <form class="entry">
-               <label for="date">Date</label><br>
-               <input type="text" id="date"><br>
-               <label for="concepts">Concepts</label><br>
-               <input type="text" id="concepts"><br>
-               <label for="entry">Entry</label><br>
-               <input type="text" id="entry"><br>
-            </form>
-        </div>
-        
-        <div class="mainContainer__right">
-            <form class="buttons">
-                <input type="radio" id="mood">
-                <label for="mood">Mood</label><br>
-                <input type="radio" id="record">
-                <label for="record">Record Entry</label><br>
-                <input type="radio" id="delete">
-                <label for="delete">Delete Entry</label>
-              </form>
-            <div class="mood">
-
-            </div>
-            <div class="record">
-
-            </div>
-            <div class="delete">
-
-            </div>
-
-        </div>
-
-    </main>
-
+    <h2>Daily Journal</h2>
+    <form action="">
+        <fieldset>
+            <label for="journalDate">Date of Entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+        <fieldset>
+            <label for="conceptsCovered">Concepts Covered</label>
+            <input type="text" name="conceptsCovered" id="conceptsCovered">
+        </fieldset>
+        <fieldset>
+            <label for="journalEntry">Journal Entry</label>
+            <input type="text" name="journalEntry" id="journalEntry">
+        </fieldset>
+            <label for="mood">Mood for the Day</label>
+            <select name="mood" id="mood">
+                <option value="enthused">Enthused</option>
+                <option value="confused">Confused</option>
+                <option value="tired">Tired</option>
+                <option value="content">Content</option>
+            </select>
+        <fieldset>
+            <button type="submit">Record Journal Entry</button>
+        </fieldset>
+    </form>
     <script type="module" src="./scripts/main.js"></script>
     <footer>
         <div class="name">
