@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
-/*Typography
---------------------------------------------------------------*/
 body,
 button,
 input,
@@ -10,31 +8,18 @@ textarea {
 	color: #404040;
 	font-family: "Comfortaa", Arial, sans-serif;
 	font-size: 14px;
-	line-height: 1.5;
+
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
-
-/*Typography
---------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-	color: black;
-	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
+fieldset {
+	display: flex;
+	flex-direction: column;
+	border: none;
+	width: min-content;
 }
 body {
 	display: flex;
@@ -43,18 +28,30 @@ body {
 	background-size: 100%;
 	color: white;
 }
+h1 {
+	text-align: center;
+}
 .container__left {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 3;
+ 	flex-grow: 3;
 }
 .container__right {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
-	flex-grow: 2;
+	flex-grow: 1;
 }
 img {
 	width: 100%;
-	height: auto;
-  }
-  
+	height: auto; 
+}
+button {
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 250px;
+}	
