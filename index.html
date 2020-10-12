@@ -8,20 +8,21 @@
 </head>
 
 <body>
-    <h2>Daily Journal</h2>
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of Entry</label>
-            <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
-        <fieldset>
-            <label for="conceptsCovered">Concepts Covered</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered">
-        </fieldset>
-        <fieldset>
-            <label for="journalEntry">Journal Entry</label>
-            <input type="text" name="journalEntry" id="journalEntry">
-        </fieldset>
+    <div class="container__left">
+        <h2>Daily Journal</h2>
+        <form action="">
+            <fieldset>
+                <label for="journalDate">Date of Entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+            <fieldset>
+                <label for="conceptsCovered">Concepts Covered</label>
+                <input type="text" name="conceptsCovered" id="conceptsCovered">
+            </fieldset>
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <input type="text" name="journalEntry" id="journalEntry">
+            </fieldset>
             <label for="mood">Mood for the Day</label>
             <select name="mood" id="mood">
                 <option value="enthused">Enthused</option>
@@ -29,10 +30,20 @@
                 <option value="tired">Tired</option>
                 <option value="content">Content</option>
             </select>
-        <fieldset>
-            <button type="submit">Record Journal Entry</button>
-        </fieldset>
-    </form>
+            <fieldset>
+                <button type="submit">Record Journal Entry</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="container__right">
+        <label for="entries">Entries</label>
+        <select name="entries" id="entries">
+            <option value="enthused">Enthused</option>
+            <option value="confused">Confused</option>
+            <option value="tired">Tired</option>
+            <option value="content">Content</option>
+        </select>
+    </div>
     <script type="module" src="./scripts/main.js"></script>
     <footer>
         <div class="name">
@@ -42,6 +53,9 @@
 
         </div>
         <div class="copyright">
+
+        </div>
+        <div class="container__right">
 
         </div>
     </footer>
