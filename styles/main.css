@@ -31,6 +31,12 @@ body {
 h1 {
 	text-align: center;
 }
+h3 {
+	text-align: center;
+}
+.container {
+	display: flex;
+}
 .container__left {
 	display: flex;
 	flex-direction: column;
@@ -41,6 +47,11 @@ h1 {
 	flex-wrap: wrap;
 	flex-direction: column;
 	flex-grow: 1;
+}
+.journalEntry {
+	border: 1 px solid white;
+	border-style: outset;
+	border-radius: 5px;
 }
 img {
 	width: 100%;
