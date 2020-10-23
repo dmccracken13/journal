@@ -1,3 +1,8 @@
 import { EntryListComponent } from "./JournalEntryList.js";
-EntryListComponent()
+import { getEntries } from "./JournalDataProvider.js";
+import {JournalFormComponent} from "./JournalForm.js"
 
+EntryListComponent()
+getEntries()
+
+JournalFormComponent()

@@ -8,35 +8,18 @@
 </head>
 
 <body>
-    <div class="container__left">
-        <h1>Ponderings of an Amateur Coder</h1>
-        <form action="">
-            <fieldset>
-                <label for="journalDate">Date of Entry</label>
-                <input type="date" name="journalDate" id="journalDate">
-         
-                <label for="conceptsCovered">Concepts Covered</label>
-                <input type="text" name="conceptsCovered" id="conceptsCovered">
-           
-                <label for="journalEntry">Journal Entry</label>
-                <input type="text" name="journalEntry" id="journalEntry">
-            
-                <label for="mood">Mood for the Day</label>
-                <select name="mood" id="mood">
-                    <option value="enthused">Enthused</option>
-                    <option value="confused">Confused</option>
-                    <option value="tired">Tired</option>
-                    <option value="content">Content</option>
-                </select>
-                <br>
-                <button type="submit">Record Journal Entry</button>
-            </fieldset>
-        </form>
-    </div>
-    <div class="container__right">
-      
-    </div>
+    <div class="container">
+        <div class="container__left">
+            <h1>Ponderings of an Amateur Coder</h1>
+            <div class="form__container">
 
+            </div>
+        </div>
+        <div class="container__right">
+            <div class="entry__container">
+            </div>
+        </div>
+    </div>
     <script type="module" src="./scripts/main.js"></script>
     <footer>
         <div class="name">
@@ -46,9 +29,6 @@
 
         </div>
         <div class="copyright">
-
-        </div>
-        <div class="container__right">
 
         </div>
     </footer>
